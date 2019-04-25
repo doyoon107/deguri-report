@@ -18,7 +18,7 @@ class: center, middle, inverse, title-slide
 
 ---
 
-## 문제 제기
+# 문제 제기
 
 모바일 환경에 익숙하지 않은 중,노년층의 간편 결제 시장에서의 소외
 
@@ -26,14 +26,14 @@ class: center, middle, inverse, title-slide
   &lt;img src="images/1-01.jpg" /&gt;
 &lt;/p&gt;
 ---
-## 문제 제기
+# 문제 제기
 
 - 간편 결제 서비스의 혜택이 주 사용자인 2030 세대에 편중
 - 중, 노년층의 소외 현상 심화
 ---
 # 하지만...
 ---
-## 문제 제기
+# 문제 제기
 - 5060 세대는
     - 안정적인 경제력을 바탕으로 간편 결제 시장의 ‘큰 손’이 될 가능성이 높은 세대
     - 과거의 베이비붐 세대로서 우리나라에서 차지하는 인구 비율이 높음.
@@ -43,21 +43,21 @@ class: center, middle, inverse, title-slide
   &lt;img style="width: 600px;" src="images/1-02.png" /&gt;
 &lt;/p&gt;
 ---
-## 문제 제기
+# 문제 제기
 - 5060 세대는 간편 결제 시장의 블루 오션으로서, 간편 결제 업체들이 반드시 공략해야 할 타겟 소비자층이다!
 ---
-## 문제 제기
+# 문제 제기
 - 5060 세대를 효과적으로 공략하기 위해서는 어떻게 해야 할까?
     - ‘경제적 혜택’이 가장 큰 유인
 - 5060 세대에 대한 분석을 바탕으로 최적화된 할인혜택, 서비스 등 경제적 유인을 제공
 - 5060 세대가 간편 결제 시스템에 익숙해질 수 있도록 이들에게 알맞은 광고, 홍보 방안 제시
 
 ---
-## 조사 주제
+# 조사 주제
 
 **5060 세대의 간편 결제 이용률 증가를 위한 방안 제안**
 ---
-## 활용 데이터와 분석 도구
+# 활용 데이터와 분석 도구
 
 --
 **엠브레인 패널 데이터를 R을 사용하여 분석한다.**
@@ -70,15 +70,14 @@ class: center, middle, inverse, title-slide
 - 패널들의 어플리케이션 이용 정보
 
 ---
-## 현재까지 진행 상황
+# 현재까지 진행 상황
 --
 
 - 간편 결제 시장 분석
 - EDA
-- 웹앱 구축
-- GitHub repository
+- 소프트웨어 제반
 ---
-### 간편 결제 시장 분석
+## 간편 결제 시장 분석
 
 - 2017년 국내 간편 결제 서비스 거래액: **40조원**
     - 2016년(11조7810억원) 보다 3배 이상 성장
@@ -88,13 +87,13 @@ class: center, middle, inverse, title-slide
 
 - 현재 간편 결제 시장은 **상위 플레이어 4사(삼성페이, 네이버페이, 카카오페이, 페이코)**의 영향력이 매우 큼.
 ---
-### 간편 결제 시장 분석
+## 간편 결제 시장 분석
 
 - 아직까지 국내 지급 결제 시장에서 선호도는 신용카드가 매우 높은 상태
 - 우수한 인프라와 범용성, 편리성을 확보한 간편결제 업체들 중심으로 시장이 단순화될 것이라고 예상
     - 경쟁에서 살아남기 위해서는 신용카드보다 뛰어난 편리성, 다양한 혜택 등을 제공하여 소비자를 유치해야 함
 ---
-### 간편 결제 시장 분석
+## 간편 결제 시장 분석
 
 - 각 업체별 특징과 장단점이 뚜렷하게 나타나는 편
 --
@@ -103,7 +102,7 @@ class: center, middle, inverse, title-slide
 - 오프라인 시장: 삼성페이가 압도적인 이용률과 가맹점 수를 보유
 
 ---
-### EDA
+## EDA
 
 &lt;p align="center" style="margin: 40px 0;"&gt;
   &lt;img style="width: 400px;" src="images/4-01.png" /&gt;
@@ -117,7 +116,7 @@ class: center, middle, inverse, title-slide
     - 5060 세대는 다른 연령층에 비해 간편 결제를 자주 사용하지 않음.
 
 ---
-### EDA
+## EDA
 - 연령별 금융 결제 이용 방식 조사 (중복 응답 허용)
     - **전 연령 모두 현금, 카드 등 기존 결제 방식(붉은색)을 이용하는 경우가 많음.**
 
@@ -125,7 +124,7 @@ class: center, middle, inverse, title-slide
   &lt;img style="width: 600px;" src="images/4-02.png" /&gt;
 &lt;/p&gt;
 ---
-### EDA
+## EDA
 
 &lt;p align="center" style="margin: 20px 0;"&gt;
   &lt;img style="width: 600px;" src="images/4-02.png" /&gt;
@@ -135,24 +134,88 @@ class: center, middle, inverse, title-slide
 - **오프라인 간편 결제(초록색)**의 경우 전 연령대 모두 전반적으로 이용률이 낮은 편이나, **5060 세대는 더욱 낮은 이용률을 보임.**
 
 ---
-### EDA
+## EDA
 
 - **실제 데이터에서 5060 세대가 간편 결제를 잘 이용하지 않는다는 사실을 다시 한 번 확인하였음.**
 - 아직 활성화에 어려움을 겪고 있는 오프라인 간편 결제 시장 뿐만 아니라 **상대적으로 활성화되어 있는 온라인 간편 결제 시장에서도 5060 세대가 소외되어 있음.**
 
 ---
-### 웹앱 구축
+## 소프트웨어 제반
+--
 
-- https://shiny.pjshwa.me/
-    - 데이터 도표를 쉽게 분석할 수 있도록 구축함. 이후 추가적인 서비스를 구축할 예정. 
+- 데이터 정제 및 변환
+--
+
+- application 코드 작성
+--
+
+- hosting 서버 설정
 
 ---
-### GitHub repository
+### 데이터 정제 및 변환
 
-- https://github.com/desaip2468/deguri
+- 4개월치 결제 내역
+    - 월별로 130만 row 이상
+
+--
+
+- Line by Line
+--
+
+- DBMS (DataBase Management System)
 
 ---
-## 앞으로의 일정
+### application 코드 작성
+
+--
+
+- RMariaDB package
+
+```r
+install.packages("RMariaDB")
+```
+
+--
+
+- X vs Y plot?
+---
+### application 코드 작성
+
+--
+
+&lt;p align="center" style="margin: 50px 0;"&gt;
+  &lt;img style="width: 600px;" src="images/4-03.png" /&gt;
+&lt;/p&gt;
+
+--
+
+- SQL `GROUP BY` statement
+---
+### application 코드 작성
+
+--
+
+&lt;p align="center" style="margin: 50px 0;"&gt;
+  &lt;img style="width: 600px;" src="images/4-04.png" /&gt;
+&lt;/p&gt;
+---
+### application 코드 작성
+
+- Database Index 적용
+---
+### hosting 서버 설정
+
+--
+
+- `shinyapps.io`?
+--
+
+- 도메인 설정
+--
+
+- Database pool 설정
+---
+# 앞으로의 일정
 
 - 5060 세대를 간편 결제 이용자 (Heavy user / Light user)와 미 이용자로 분류
     - ‘Clustering’(군집분석) 기법을 사용하여 각 집단 별 특성 차이를 살펴볼 예정
@@ -166,7 +229,7 @@ class: center, middle, inverse, title-slide
 - 간편 결제 시장 분석 결과를 바탕으로 간편 결제 회사들을 온/오프라인, 이용 방법 등에 따라 분류하고 각 회사별로 적합한 마케팅 방안을 도출
 
 ---
-## 기대 효과
+# 기대 효과
 
 - 고령화 시대의 핵심 고객인 5060 세대를 공략할 수 있는 방안을 제시
     - 5060 세대를 세부 집단으로 분류하여 분석함으로써 보다 정교한 분석과 타겟팅 전략을 도출
